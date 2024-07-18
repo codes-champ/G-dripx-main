@@ -10,7 +10,7 @@
 body{
     height: 100vh;
     min-width: 400px;
-    overflow: hidden;
+    overflow:visible;
     background: black;
     color: #fff;
 }
@@ -214,17 +214,14 @@ header #cart::after{
 
 .home .img-bx{
     width: 45%;
+    height: 100%;
   
-
 }
 
 .home .img-bx img{
     width: 95%;
-    transform: rotate(5deg) ;
-    -webkit-transform: rotate(5deg) ;
-    -moz-transform: rotate(5deg) ;
-    -ms-transform: rotate(5deg) ;
-    -o-transform: rotate(5deg) ;
+  
+
     
 }
 
@@ -232,6 +229,7 @@ header #cart::after{
 .home .social-icons {
     position: absolute;
     bottom: 0;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
     width: 400px;
@@ -239,7 +237,8 @@ header #cart::after{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 1rem;
+    margin-top: 7rem;
+
 }
 
 .home .social-icons a{
@@ -479,6 +478,7 @@ header nav .menu li a:hover{
     .home .img-bx img{
         width: 50%;
         margin-left: 80px;
+        margin-top: 40px;
  
    
 
@@ -501,4 +501,23 @@ header nav .menu li a:hover{
    
 }
 
+}
+
+
+@media(max-width:345px){
+    
+    
+.home .social-icons {
+    position: absolute;
+    top: 105%;
+    left: 62%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+   
+}
 }
